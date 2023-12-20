@@ -1,0 +1,23 @@
+Approach Explanation:
+
+The Java application that is supplied finds the highest-scoring alignment between two gene sequences using a dynamic programming technique. To determine the best alignment score for each potential prefix of the input sequences, it uses a 2D array. The alignment itself is then traced using the backtracking technique.
+
+Initialization: To store the alignment scores, the application initializes a 2D array. In order to represent the scores for aligning gaps, it sets the basis cases for empty strings.
+
+Main Loop: Using the substitution, deletion, and insertion operations and the corresponding scores from the given scoring matrix, the software iterates through the 2D array to determine the alignment scores.
+
+Backtracking: The software goes back after filling the 2D array in order to identify the aligned sequences that have the best score.
+
+
+Time Analysis:
+
+O(mn) is the time complexity, where m is the first gene sequence's length and n is the second gene sequence's length. The reason for this is the 2D array's nested iteration.
+
+For the 2D array used to store the alignment scores, the space complexity is O(mn).
+
+Conclusion
+:
+
+The method of dynamic programming effectively determines which alignment between two gene sequences has the best score. It determines the best alignment with an O(mn) time complexity by using the score matrix and backtracking. This method guarantees a scalable solution for nucleotide composition and length alignment of gene sequences.
+
+The tool that is offered provides a dependable way to align gene sequences, which is essential in genetic analysis and bioinformatics.
